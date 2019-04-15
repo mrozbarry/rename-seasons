@@ -16,8 +16,8 @@ node rename-seasons.js --source path/to/files [--dest output path]`);
 const options = {
   source,
   dest: getCliOption(['-d', '--dest']) || source,
-  dryRun: getCliOption(['--dry-run']),
-  ignore: getCliOption(['--ignore']) || '',
+  dryRun: getCliOption(['--dry-run']) === '1',
+  ignore: getCliOption(['--ignore']),
 };
 
 app(options, getCliOption(['-r', '--rules']))
