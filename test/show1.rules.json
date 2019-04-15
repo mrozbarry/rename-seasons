@@ -1,0 +1,7 @@
+{
+  "expression": "Season (\\d+) Episode (\\d+) - (.+)\\.(.+)$",
+  "season": 1,
+  "episode": 2,
+  "title": 3,
+  "ext": 4
+}
